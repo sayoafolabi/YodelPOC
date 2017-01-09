@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="test" default="exec" basedir=".">
+	
+	<tstamp>
+        <format property="timestamp" pattern="ddMMyyyy HHmm" />
+    </tstamp>
+	
+    <property name="src" value="./src" />
+    <property name="lib" value="./lib" />
+    <property name="bin" value="./bin" />
+    <property name="report" value="./report" />
+    <path id="test.classpath">
+        <pathelement location="${bin}" />
+        <fileset dir="${lib}">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+    <target name="init">
+        <delete dir="${bin}" />
+        <mkdir dir="${bin}" />
+    </target>
+    <target name="compile" depends="init">
+        <javac source="1.7" srcdir="${src}" fork="true" destdir="${bin}">
+            <classpath>
+                <pathelement path="${bin}"></pathelement>
+                <fileset dir="${lib}">
+                    <include name="**/*.jar" />
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+    <target name="exec" depends="compile">
+          
+        <mkdir dir="${report}/${timestamp}/xml" />
+        <junit printsummary="yes" haltonfailure="no">
+            <classpath>
+                <pathelement location="${bin}" />
+                <fileset dir="${lib}">
+                    <include name="**/*.jar" />
+                </fileset>
+            </classpath>
+			<formatter type="xml" />
+			
+            <test name="tv.miranda.skylight.test_suites.FullSuite" haltonfailure="no" todir="${report}/${timestamp}/xml" outfile="TEST-result">
+                <formatter type="xml" />
+            </test>
+        	<!--<batchtest fork="yes" todir="${report}/${timestamp}/xml">
+				<fileset dir="${src}">
+					<include name="**/*Suite*.java"/>
+				</fileset>
+			</batchtest> -->
+        </junit>
+        <junitreport todir="${report}">
+            <fileset dir="${report}/${timestamp}/xml">
+                <include name="TEST*.xml" />
+            </fileset>
+            <report format="frames" todir="${report}/${timestamp}/html" />
+        </junitreport>
+    </target>
+</project>

@@ -1,0 +1,8 @@
+package cucumber.pages;
+
+import com.common.helper.Helper;
+
+public class YodelHomePage extends Helper
+{
+
+}

@@ -1,0 +1,16 @@
+package cucumber;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		plugin = {"pretty", "json:target/cucumber-html-report"},
+		features = {"src/cucumber/"},
+		glue = {"cucumber.steps"}
+)
+public class CucumberRunner {
+
+}

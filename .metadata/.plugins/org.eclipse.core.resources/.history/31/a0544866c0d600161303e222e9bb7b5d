@@ -1,0 +1,48 @@
+package cucumber.pages;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+
+import com.common.helper.Helper;
+
+public class YodelHomePage extends Helper
+{
+	private final String yodelUrl = "https://www.yodel.co.uk";
+	
+	private WebElement yodelLogo;
+	private WebElement trackingNumberField;
+	private WebElement deliveryPostcodeField;
+	private WebElement trackingButton;
+	
+	
+	public void navigateToYodelHomepage() throws Exception
+	{
+		launchUrl(yodelUrl);
+	}
+	
+	public void isHomepageDisplayed() throws Exception
+	{
+		yodelLogo = getElementByCssSelector(".logo .injected-svg");
+		Assert.assertTrue("Yodel homepage is not displayed", yodelLogo.isDisplayed());
+	}
+	
+	public void enterTrackingNumber() throws Exception
+	{
+		trackingNumberField = getElementById("TrackingCode");
+		trackingNumberField.clear();
+		trackingNumberField.sendKeys("YOD123456");
+	}
+	
+	public void enterDeliveryPostcode() throws Exception
+	{
+		deliveryPostcodeField = getElementById("PostCode");
+		deliveryPostcodeField.clear();
+		deliveryPostcodeField.sendKeys("L3 4AE");
+	}
+	
+	public void clickOnTrackButton() throws Exception
+	{
+		
+	}
+	
+}

@@ -1,0 +1,27 @@
+package cucumber.pages;
+
+import org.openqa.selenium.WebElement;
+
+import com.common.helper.Helper;
+
+public class YodelHomePage extends Helper
+{
+	private final String yodelUrl = "https://www.yodel.co.uk";
+	
+	private WebElement yodelLogo;
+	private WebElement trackingNumberField;
+	private WebElement deliveryPostcodeField;
+	private WebElement trackingButton;
+	
+	
+	public void navigateToYodelHomepage() throws Exception
+	{
+		launchUrl(yodelUrl);
+	}
+	
+	public void isHomepageDisplayed() throws Exception
+	{
+		
+	}
+	
+}

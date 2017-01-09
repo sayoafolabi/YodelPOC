@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Track using a Yodel customer number",
+        "description": "",
+        "id": "customer-can-track-a-specific-number;track-using-a-yodel-customer-number",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22451428683,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to Yodel homepage",
+            "match": {
+              "location": "YodelTrackingSteps.shouldNavigateToYodelHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 741325426,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter Yodel tracking number",
+            "match": {
+              "location": "YodelTrackingSteps.enterYodelTrackingNumber()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 510434682,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter my postcode",
+            "match": {
+              "location": "YodelTrackingSteps.enterCustomerPostcode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 665283555,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on track button",
+            "match": {
+              "location": "YodelTrackingSteps.clickOnTrackButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40588,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the corresponding tracking information for my tracking number is displayed",
+            "match": {
+              "location": "YodelTrackingSteps.correspondingTrackingInfoIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer can track a specific number",
+    "description": "In order to know the status of my parcel\r\nAs a customer\r\nI want to be able to track my parcel on Yodel website with a given Yodel tracking number",
+    "id": "customer-can-track-a-specific-number",
+    "keyword": "Feature",
+    "uri": "features/SearchWithATrackingNumber.feature"
+  }
+]

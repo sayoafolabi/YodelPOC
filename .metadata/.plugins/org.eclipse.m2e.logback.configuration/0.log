@@ -1,0 +1,19 @@
+2017-01-09 19:44:27,357 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Cucumber\Websites\pom.xml
+2017-01-09 19:44:33,613 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Yodel:Websites:0.0.1-SNAPSHOT @ C:\Cucumber\Websites\pom.xml.
+2017-01-09 19:44:35,161 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Websites/src/main/java
+2017-01-09 19:44:35,168 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Websites/src/test/java
+2017-01-09 19:44:35,273 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 7 sec
+2017-01-09 19:44:36,375 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-09 19:44:36,377 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Cucumber\Websites\src\main\resources
+2017-01-09 19:44:36,382 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-09 19:44:36,382 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Cucumber\Websites\src\test\resources
+2017-01-09 19:45:27,924 [Worker-13] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Cucumber\YodelTracking\pom.xml
+2017-01-09 19:45:30,268 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Yodel:YodelTracking:0.0.1-SNAPSHOT @ C:\Cucumber\YodelTracking\pom.xml.
+2017-01-09 19:45:30,693 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /YodelTracking/src/main/java
+2017-01-09 19:45:30,700 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /YodelTracking/src/test/java
+2017-01-09 19:45:30,779 [Worker-13] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2017-01-09 19:45:31,059 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-09 19:45:31,060 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Cucumber\YodelTracking\src\main\resources
+2017-01-09 19:45:31,064 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-09 19:45:31,064 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Cucumber\YodelTracking\src\test\resources
+2017-01-09 21:07:43,276 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.

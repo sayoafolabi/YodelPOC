@@ -1,0 +1,37 @@
+package cucumber.steps;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class YodelTrackingSteps {
+	
+	@Given("^I navigate to Yodel homepage$")
+	public void i_navigate_to_Yodel_homepage() throws Throwable {
+		
+	}
+
+	@When("^I enter Yodel tracking number$")
+	public void i_enter_Yodel_tracking_number() throws Throwable {
+		
+	}
+
+	@When("^I enter my postcode$")
+	public void i_enter_my_postcode() throws Throwable {
+		
+	}
+
+	@When("^I click on track button$")
+	public void i_click_on_track_button() throws Throwable {
+	    
+	}
+
+	@Then("^the corresponding tracking information for my tracking number is displayed$")
+	public void the_corresponding_tracking_information_for_my_tracking_number_is_displayed() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+
+}

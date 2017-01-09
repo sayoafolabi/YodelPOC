@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun cucumber.CucumberRunner.initializationError" project="Yodel" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testcase name="initializationError" classname="cucumber.CucumberRunner" time="0.002">
+    <error>cucumber.runtime.CucumberException: Failed to instantiate public cucumber.runtime.java.JavaBackend(cucumber.runtime.io.ResourceLoader) with [cucumber.runtime.io.MultiLoader@60704c]&#13;
+	at cucumber.runtime.Reflections.newInstance(Reflections.java:44)&#13;
+	at cucumber.runtime.Reflections.instantiateSubclasses(Reflections.java:30)&#13;
+	at cucumber.runtime.Runtime.loadBackends(Runtime.java:99)&#13;
+	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:66)&#13;
+	at cucumber.api.junit.Cucumber.createRuntime(Cucumber.java:80)&#13;
+	at cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:59)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)&#13;
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)&#13;
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)&#13;
+	at org.junit.internal.requests.FilterRequest.getRunner(FilterRequest.java:36)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createFilteredTest(JUnit4TestLoader.java:77)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:68)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:43)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:444)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at cucumber.runtime.Reflections.newInstance(Reflections.java:41)&#13;
+	... 23 more&#13;
+Caused by: java.lang.NoClassDefFoundError: org/springframework/beans/BeansException&#13;
+	at java.lang.Class.getDeclaredConstructors0(Native Method)&#13;
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)&#13;
+	at java.lang.Class.getConstructor0(Unknown Source)&#13;
+	at java.lang.Class.getConstructor(Unknown Source)&#13;
+	at cucumber.runtime.Reflections.hasConstructor(Reflections.java:53)&#13;
+	at cucumber.runtime.Reflections.instantiateSubclasses(Reflections.java:29)&#13;
+	at cucumber.runtime.Reflections.instantiateExactlyOneSubclass(Reflections.java:16)&#13;
+	at cucumber.runtime.java.ObjectFactoryLoader.loadObjectFactory(ObjectFactoryLoader.java:31)&#13;
+	at cucumber.runtime.java.JavaBackend.&lt;init&gt;(JavaBackend.java:65)&#13;
+	... 28 more&#13;
+Caused by: java.lang.ClassNotFoundException: org.springframework.beans.BeansException&#13;
+	at java.net.URLClassLoader.findClass(Unknown Source)&#13;
+	at java.lang.ClassLoader.loadClass(Unknown Source)&#13;
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)&#13;
+	at java.lang.ClassLoader.loadClass(Unknown Source)&#13;
+	... 37 more&#13;
+&#13;
+</error>
+  </testcase>
+</testrun>

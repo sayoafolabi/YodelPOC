@@ -1,0 +1,5 @@
+package cucumber.hooks;
+
+public class YodelHooks {
+
+}

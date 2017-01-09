@@ -1,0 +1,15 @@
+package cucumber.hooks;
+
+import com.common.helper.Helper;
+
+import cucumber.api.java.Before;
+
+public class YodelHooks extends Helper{
+	
+	@Before
+	public void setUp() throws Exception
+	{
+		
+	}
+
+}

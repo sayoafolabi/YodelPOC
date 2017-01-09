@@ -1,0 +1,13 @@
+package cucumber.pages;
+
+import org.openqa.selenium.WebElement;
+
+import com.common.helper.Helper;
+
+public class YodelHomePage extends Helper
+{
+	public WebElement yodelLogo;
+	public WebElement trackingNumberField;
+	public WebElement deliveryPostcodeField;
+	public WebElement trackingButton;
+}

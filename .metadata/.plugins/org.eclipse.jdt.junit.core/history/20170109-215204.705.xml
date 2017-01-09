@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CucumberRunner" project="Yodel" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumber.CucumberRunner" time="0.053">
+    <testsuite name="Feature: Customer can track a specific number" time="0.053">
+      <testsuite name="Scenario: Track using a Yodel customer number" time="0.053">
+        <testcase name="Given I navigate to Yodel homepage" classname="Scenario: Track using a Yodel customer number" time="0.006"/>
+        <testcase name="When I enter Yodel tracking number" classname="Scenario: Track using a Yodel customer number" time="0.003"/>
+        <testcase name="And I enter my postcode" classname="Scenario: Track using a Yodel customer number" time="0.002"/>
+        <testcase name="And I click on track button" classname="Scenario: Track using a Yodel customer number" time="0.002"/>
+        <testcase name="Then the corresponding tracking information for my tracking number is displayed" classname="Scenario: Track using a Yodel customer number" time="0.04"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
