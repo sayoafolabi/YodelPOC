@@ -3,8 +3,6 @@ package cucumber.steps;
 
 import com.common.helper.Helper;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -16,7 +14,6 @@ public class YodelTrackingSteps extends Helper
 	YodelHomePage homepage = new YodelHomePage();
 	YodelTrackingDetailPage detailPage = new YodelTrackingDetailPage();
 	
-		
 	@Given("^I navigate to Yodel homepage$")
 	public void shouldNavigateToYodelHomepage() throws Throwable 
 	{

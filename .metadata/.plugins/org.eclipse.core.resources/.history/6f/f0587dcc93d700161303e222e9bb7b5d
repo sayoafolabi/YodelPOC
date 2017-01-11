@@ -18,10 +18,22 @@ public class YodelHomePage extends Helper
 	private WebElement trackingButton;
 	
 	
+	@Before
+	public void setUp() throws Exception
+	{
+		launchBrowser("Chrome");
+	}
+	
+	@After
+	public void tearDown() throws Exception
+	{
+		closeBrowser();
+	}
+	
 	
 	public void navigateToYodelHomepage() throws Exception
 	{
-		//launchBrowser("Chrome");
+		launchBrowser("Chrome");
 		launchUrl(yodelUrl);
 	}
 	

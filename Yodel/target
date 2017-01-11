@@ -3,16 +3,38 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 12627107732,
+              "status": "passed"
+            },
+            "match": {
+              "location": "YodelHooks.setUp()"
+            }
+          }
+        ],
         "line": 6,
         "name": "Track using a Yodel customer number",
         "description": "",
         "id": "customer-can-track-a-specific-number;track-using-a-yodel-customer-number",
+        "after": [
+          {
+            "result": {
+              "duration": 1702307979,
+              "status": "passed"
+            },
+            "match": {
+              "location": "YodelHooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 22451428683,
+              "duration": 4855506264,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 741325426,
+              "duration": 653630527,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 510434682,
+              "duration": 713426829,
               "status": "passed"
             },
             "line": 9,
@@ -48,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 665283555,
+              "duration": 769921487,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 40588,
+              "duration": 150689,
               "status": "passed"
             },
             "line": 11,
